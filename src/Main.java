@@ -56,10 +56,10 @@ public class Main {
                     listAllContacts(cBook);
                     break;
                 case SEARCH_CONTACT:
-                    searchContact(cBook);
+                    searchContact(in,cBook);
                     break;
                 case SAME_PHONE_NUMBERS:
-                    samaPhoneNumbers(cBook);
+                    samePhoneNumbers(in,cBook);
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
@@ -168,7 +168,7 @@ public class Main {
        }
     }
 
-    private static void samaPhoneNumbers(Scanner in,ContactBook cBook) {
+    private static void samePhoneNumbers(Scanner in,ContactBook cBook) {
         if (cBook.checkSamePhoneNumber()){
             System.out.println("There are contacts that share phone numbers.");
         }
