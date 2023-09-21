@@ -59,7 +59,7 @@ public class Main {
                     searchContact(in,cBook);
                     break;
                 case SAME_PHONE_NUMBERS:
-                    samePhoneNumbers(in,cBook);
+                    samePhoneNumbers(cBook);
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
@@ -159,6 +159,7 @@ public class Main {
     private static void searchContact(Scanner in, ContactBook cBook)    {
 
        int phone = in.nextInt();
+       in.nextLine();
 
        if( cBook.getContact(phone) == null) {
            System.out.println("Phone number does not exist.");
@@ -168,11 +169,11 @@ public class Main {
        }
     }
 
-    private static void samePhoneNumbers(Scanner in,ContactBook cBook) {
+    private static void samePhoneNumbers(ContactBook cBook) {
         if (cBook.checkSamePhoneNumber()){
             System.out.println("There are contacts that share phone numbers.");
         }
         else
-            System.out.println("All contacts have different phone numbers");
+            System.out.println("All contacts have different phone numbers.");
     }
 }
