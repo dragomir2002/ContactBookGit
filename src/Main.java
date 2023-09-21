@@ -156,14 +156,20 @@ public class Main {
         else System.out.println(BOOK_EMPTY);
     }
 
-    private static void searchContact(ContactBook cBook)    {
+    private static void searchContact(Scanner in, ContactBook cBook)    {
 
-
+       int phone = in.nextInt();
+       if( cbook.getContact == null) {
+           System.out.printf("");
+        }
 
 
     }
 
-    private static void samaPhoneNumbers(ContactBook cBook) {
+    private static void samaPhoneNumbers(Scanner in,ContactBook cBook) {
+
+
+
 
     }
 }
