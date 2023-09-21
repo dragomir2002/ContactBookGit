@@ -104,8 +104,12 @@ public class ContactBook {
     }
 
     public String getContact (int phoneNumber) {
-        //TODO
-        return "";
+            for (int i = 0; i < counter; i++) {
+                if (contacts[i].getPhone() == phoneNumber) {
+                    return contacts[i].getName();
+                }
+            }
+        return null;
     }
 
 }
