@@ -159,11 +159,13 @@ public class Main {
     private static void searchContact(Scanner in, ContactBook cBook)    {
 
        int phone = in.nextInt();
-       if( cbook.getContact == null) {
-           System.out.printf("");
+
+       if( cBook.getContact(phone) == null) {
+           System.out.println("Phone number does not exist.");
         }
-
-
+       else {
+           System.out.println(cBook.getContact(phone));
+       }
     }
 
     private static void samaPhoneNumbers(Scanner in,ContactBook cBook) {
