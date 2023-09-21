@@ -55,6 +55,12 @@ public class Main {
                 case LIST_CONTACTS:
                     listAllContacts(cBook);
                     break;
+                case SEARCH_CONTACT:
+                    searchContact(cBook);
+                    break;
+                case SAME_PHONE_NUMBERS:
+                    samaPhoneNumbers(cBook);
+                    break;
                 default:
                     System.out.println(COMMAND_ERROR);
             }
@@ -148,5 +154,13 @@ public class Main {
             }
         }
         else System.out.println(BOOK_EMPTY);
+    }
+
+    private static void searchContact(ContactBook cBook)    {
+
+    }
+
+    private static void samaPhoneNumbers(ContactBook cBook) {
+
     }
 }
